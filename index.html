@@ -41,13 +41,12 @@
         </div>
    </section>
 
-<section id="" class="section2">
+<section id="section-a" class="section2">
         <div class="sect2-cols">
             <img src="./images/Rectangle.png" alt="" class="img1">
             <img src="./images/phone2.png" alt="" class="img2">
+            <hr class="sect-hr">
                 </div>
-        </div>
-        </div>
     </section>
 
         <section id="" class="section3">
@@ -115,14 +114,13 @@
                         </div></section>
 
 
-                <footer id="" class="footer-sect">
+                <footer id  = "footer-sect">
                     <div class="foot-logo"><img src="./images/logo.png" alt=""></div>
                     <div class="social-icons">
-                        <ul>
-                            <li><img src="./images/twitter.png"></li>
-                            <li><img src="./images/fb.png"></li>
-                            <li><img src="./images/instagram.png"></li>
-                        </ul></div>
+                           <a href="#"></a><img src="./images/twitter.png"></a>
+                           <a href="#"></a><img src="./images/fb.png"></a>
+                           <a href="#"></a><img src="./images/instagram.png"></a>
+                        </div>
                         <div class="copy-right"><p>Copyright 2020 Bella Onojie.com</p></div>
                     
                 </footer>        
@@ -310,7 +308,25 @@
          text-align: center;
          }
 
-        .img1 {
+
+
+         img.img1 {
+        top: -310px;
+        position: relative;
+         left: 50px;
+        z-index: 1;
+        }
+
+
+
+            img.img2 {
+            top: -449px;
+            position: relative;
+            left: -200px;
+            }
+
+
+        /*.img1 {
          margin: -338px;
          z-index: 11;
             }
@@ -318,7 +334,17 @@
             .img2 {
             margin-top: -103px;
             padding-left: 88px;
+                }*/
+
+        section#section-a {
+                    max-height: 600px;
                 }
+
+                 hr.sect-hr {
+                    margin-top: -220px;
+                    width: 884px;
+                    border: 3px solid #E4E4E4;
+                    }
 
        .sect2-col1 {
             display: flex;
@@ -329,7 +355,7 @@
         .sect3-inner- {
                 display: flex;
                 justify-content: center;
-                margin: 0px 250px;
+                
                 }
     .sect3-content h3 {
     text-align: left;
@@ -350,7 +376,7 @@
    letter-spacing: 0.2px;
 /* text */
    color: #252B42;
-   max-width: 480px;
+   max-width: 561px;
 }
 
 .sect3-content p{
@@ -435,14 +461,11 @@ color: #737373;
  padding: 0px 232px ;
 }
 
-.sect4-content {
-    padding-right: 205px;
+.img6 {
+    padding-left: 28px;
 }
 
 
-.img5 {
-    padding-right: 205px;
-}
 .sect3-cont{
     padding-top: 0px;
 }
@@ -508,11 +531,16 @@ button#app-store1 {
     color: #FFFFFF;
 }
 
-.footer-sect {
+
+
+footer#footer-sect {
     display: flex;
-    column-gap: 289px;
-    padding: 53px 186px;
+    padding: 53px 30px;
+    align-items: center;
+    justify-content: space-between;
 }
+
+
 .social-icons {
     padding-top: 25px;
 }
@@ -522,12 +550,6 @@ button#app-store1 {
     column-gap: 43px;
 }
 
-.copy-right {
-    width: 100%;
-    text-align: end;
-    padding-top: 42px;
-    
-}
 
 .copy-right p{
     font-family: sans-serif;
@@ -535,15 +557,67 @@ font-style: normal;
 font-weight: bold;
 font-size: 12px;
 line-height: 18px;
-/* identical to box height, or 150% */
 
-text-align: right;
 letter-spacing: 0.1px;
 
 /* second text */
 
 color: #5C5C5C;
 }
+
+
+
+@media(max-width:1079px){
+    body{
+   width : 1079px;
+}
+}
+
+
+@media(max-width:414px){
+    .hero-section{
+    height: 619px;
+    background: #fff;
+    background-size: cover;
+    color: #252B42;
+    padding: 73px 0px;
+    background-repeat: no-repeat;
+}
+
+.hero-section h1{
+    color: #252B42;
+    font-size: 36px;
+line-height: 42px;
+}
+.hero-section p{
+    color: #737373;
+}
+.hero-section h3{
+    color: #737373;
+}
+
+button#app-store{
+    background: transparent;
+    border: 1px solid #FA4A0C;
+    color: #FA4A0C;
+}
+hr.sect-hr {
+    margin-top: 0px;
+    width: 100%;
+    
+}
+
+.sect3-inner- {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+
+}
+
+
+
     </style>
 
 </body>
